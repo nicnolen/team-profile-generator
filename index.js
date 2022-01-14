@@ -165,27 +165,40 @@ const addEmployee = () => {
           }
         },
       },
+
+      {
+        type: 'confirm',
+        name: 'confirmNewEmployee',
+        message: 'Would you like to add more team members?',
+        default: false,
+      },
     ])
     .then(employeeInfo => {
       // define data needed for the employeeInfo parameter. Use let since data can change depending on role
-      let { name, id, email, role, github, school } = employeeInfo;
+      let { name, id, email, role, github, school, confirmNewEmployee } =
+        employeeInfo;
       // define the employee variable that gets assigned based on role
       let employee;
 
       // if the employee's role is an engineer
       if (role === 'Engineer') {
         employee = new Engineer(name, id, email, github);
-
-        console.log(employee);
       } // if the employee's role is an intern
       else if (role === 'Intern') {
         employee = new Intern(name, id, email, school);
-
-        console.log(employee);
       }
 
       // push the new employee to the team array
       teamMembersArr.push(employee);
+
+      // If confirmNewEmployee is true
+      if (confirmNewEmployee) {
+        // go to the addEmployee function
+        return addEmployee(teamMembersArr);
+      } else {
+        // otherwise return the teamMemberArr
+        return teamMembersArr;
+      }
     });
 };
 
