@@ -1,5 +1,5 @@
 // Import intern constructor function
-const Intern = require('../lib/Intern.js');
+const Intern = require('../lib/Intern');
 
 // Create the intern object
 test('created the intern object', () => {
