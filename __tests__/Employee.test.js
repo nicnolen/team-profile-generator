@@ -1,5 +1,5 @@
 // Import the employee constructor
-const Employee = require('../lib/Employee.js');
+const Employee = require('../lib/Employee');
 
 // Create the employee object
 test('creates an employee object', () => {
