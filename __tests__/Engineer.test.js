@@ -15,3 +15,9 @@ test('gets the employee github', () => {
   expect(engineer.getGithub()).toEqual(expect.any(String));
 });
 
+// Write a test for the getRole method to override the role to Engineer
+test("overrides role to 'Engineer'", () => {
+  const engineer = new Engineer('Nic', 25, 'nicnolen@ymail.com', 'nicnolen');
+
+  expect(engineer.getRole()).toEqual('Engineer');
+});
