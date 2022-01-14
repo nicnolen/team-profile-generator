@@ -1,6 +1,12 @@
 // Import Inquirer (npm package)
 const inquirer = require('inquirer');
 
+// Import the manager information
+const Manager = require('./lib/Manager');
+
+// Empty array to store added team members
+var teamMembersArr = [];
+
 // Prompts for the manager (should come first since only one manager)
 const addManager = () => {
   return inquirer.prompt([
@@ -29,4 +35,14 @@ const addManager = () => {
     },
   ]);
 };
-addManager().then(answers => console.log(answers));
+addManager().then(managerInfo => {
+  // define the managerInfo parameter as the name, id, email, and office number properties of the Manager constructor function
+  const { name, id, email, officeNumber } = managerInfo;
+  // create a new Manager object with the 4 properties
+  const manager = new Manager(name, id, email, officeNumber);
+
+  // push the new manager to the team array
+  teamMembersArr.push(manager);
+  // check to see the new team members array
+  console.log(teamMembersArr);
+});
