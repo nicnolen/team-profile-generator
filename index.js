@@ -1,10 +1,16 @@
-// Import Inquirer (npm package)
-const inquirer = require('inquirer');
+// Import the page-template.js
+const generateCards = require('./src/generateHTML');
 
-// Import the manager, engineer and intern information
+// Import the manager, engineer and intern information (Constructor functions)
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
+
+// Import the file system (fs) (node module)
+const fs = require('fs');
+
+// Import Inquirer (npm package)
+const inquirer = require('inquirer');
 
 // Empty array to store added team members
 var teamMembersArr = [];
@@ -202,9 +208,31 @@ const addEmployee = () => {
     });
 };
 
+// write the HTML using the file system (first argument is the file name, second argument is the HTML template, third argument is the error callback function)
+const writeFile = data => {
+  fs.writeFile('./dist/index.html', data, err => {
+    // if there is an error
+    if (err) {
+      console.log(err);
+      return;
+      // when the profile is created
+    } else {
+      console.log(
+        'Your team profile has been created successfully! Check out index.html to see the output!'
+      );
+    }
+  });
+};
 // Initialize the command line
 addManager()
   .then(addEmployee)
   .then(teamMembersArr => {
-    console.log(teamMembersArr);
+    return generateCards(teamMembersArr);
+  })
+  .then(writeHTML => {
+    return writeFile(writeHTML);
+  })
+  // checks if there is an error message
+  .catch(err => {
+    console.log(err);
   });
