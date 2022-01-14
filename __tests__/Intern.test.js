@@ -14,3 +14,10 @@ test('get intern school', () => {
 
   expect(intern.getSchool()).toEqual(expect.any(String));
 });
+
+// Write test to override employee role to Intern
+test("override role to 'Intern'", () => {
+  const intern = new Intern('Nic', 25, 'nicnolen@ymail.com', 'UT Austin');
+
+  expect(intern.getRole()).toEqual('Intern');
+});
