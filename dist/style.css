@@ -1,0 +1,45 @@
+/* GENERAL STYLES */
+/* Margin and padding spacing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Colors */
+:root {
+  --text-card-header: #ffffff;
+  --bg-card-header: #00b3ff;
+}
+
+/* SITE TITLE */
+/* Style the site title */
+.title {
+  width: 100%;
+  font-size: 5vh;
+  background-color: #3f0d12;
+  background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
+}
+
+/* CARD HEADER */
+/* Style the card header */
+.card-heading {
+  background-color: var(--bg-card-header);
+  color: var(--text-card-header);
+}
+/* Style the icon */
+.material-icons,
+.role {
+  vertical-align: middle;
+}
+
+/* Style the role title */
+.role {
+  display: inline-block;
+}
+
+/* CARD BODY */
+/* Set a background image for the body */
+.background {
+  background-image: url('https://wallpaperaccess.com/full/499246.jpg');
+}
