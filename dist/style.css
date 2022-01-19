@@ -15,7 +15,10 @@
 /* SITE TITLE */
 /* Style the site title */
 .title {
-  font-size: 10vh;
+  width: 100%;
+  font-size: 5vh;
+  background-color: #3f0d12;
+  background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
 }
 
 /* CARD HEADER */
