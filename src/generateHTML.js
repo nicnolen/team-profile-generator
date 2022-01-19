@@ -37,17 +37,19 @@ const generateCards = team => {
 // Generate Manager card
 const generateManager = function (manager) {
   return `
-    <div class="col-3 m-3">
+    <div class="col-12 col-sm-5 col-md-3 m-3">
       <div class="card h-100">
         <div class="card-heading card-header">
           <h3>${manager.name}</h3>
           <i class="material-icons">local_cafe</i><h4 class="role">Manager</h4>
         </div>
 
-        <div class="card-body">
-          <p class="id"><b>ID:</b> ${manager.id}</p>
-          <p class="email"><b>Email:</b> <a href="mailto:${manager.email}">${manager.email}</a></p>
-          <p class="officeNumber"><b>Office Number:</b> ${manager.officeNumber}</p>
+        <div class="card-body bg-light">
+          <ul class="list-group">
+            <li class="id list-group-item"><b>ID:</b> ${manager.id}</li>
+            <li class="email list-group-item"><b>Email:</b> <a href="mailto:${manager.email}">${manager.email}</a></li>
+            <li class="officeNumber list-group-item"><b>Office Number:</b> ${manager.officeNumber}</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -57,16 +59,18 @@ const generateManager = function (manager) {
 // Generate Engineer card
 const generateEngineer = function (engineer) {
   return `
-    <div class="col-3 m-3">
+    <div class="col-12 col-sm-5 col-md-3 m-3">
       <div class="card h-100">
         <div class="card-heading card-header">
           <h3>${engineer.name}</h3>
           <i class="material-icons">engineering</i><h4 class="role">Engineer</h4>
         </div>
-        <div class="card-body">
-          <p class="id"><b>ID:</b> ${engineer.id}</p>
-          <p class="email"><b>Email:</b> <a href="mailto:${engineer.email}">${engineer.email}</a></p>
-          <p class="github"><b>GitHub:</b> <a href="https://github.com/${engineer.github}">${engineer.github}</a></p>
+        <div class="card-body bg-light">
+          <ul class="list-group">
+            <li class="id list-group-item"><b>ID:</b> ${engineer.id}</li>
+            <li class="email list-group-item"><b>Email:</b> <a href="mailto:${engineer.email}">${engineer.email}</a></li>
+            <li class="github list-group-item"><b>GitHub:</b> <a href="https://github.com/${engineer.github}">${engineer.github}</a></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -76,16 +80,18 @@ const generateEngineer = function (engineer) {
 // Generate Intern card
 const generateIntern = function (intern) {
   return `
-    <div class="col-3 m-3">
+    <div class="col-12 col-sm-5 col-md-3 m-3">
       <div class="card h-100">
         <div class="card-heading card-header">
           <h3>${intern.name}</h3>
           <i class="material-icons">school</i><h4 class="role">Intern</h4>
         </div>
-        <div class="card-body">
-          <p class="id"><b>ID:</b> ${intern.id}</p>
-          <p class="email"><b>Email:</b> <a href="mailto:${intern.email}">${intern.email}</a></p>
-          <p class="school"><b>School:</b> ${intern.school}</p>
+        <div class="card-body bg-light">
+          <ul class="list-group">
+            <li class="id list-group-item"><b>ID:</b> ${intern.id}</li>
+            <li class="email list-group-item"><b>Email:</b> <a href="mailto:${intern.email}">${intern.email}</a></li>
+            <li class="school list-group-item"><b>School:</b> ${intern.school}</li>
+          </ul>
         </div>
       </div>
     </div>
