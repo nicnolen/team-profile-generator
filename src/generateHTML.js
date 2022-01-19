@@ -40,7 +40,7 @@ const generateManager = function (manager) {
     <div class="card">
       <div class="card-header">
         <h3>${manager.name}</h3>
-        <h4>Manager</h4>
+        <i class="material-icons">local_cafe</i><h4>Manager</h4>
       </div>
 
       <div class="card-body">
