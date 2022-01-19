@@ -34,3 +34,9 @@
 .role {
   display: inline-block;
 }
+
+/* CARD BODY */
+/* Set a background image for the body */
+.background {
+  background-image: url('https://wallpaperaccess.com/full/499246.jpg');
+}

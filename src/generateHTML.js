@@ -115,11 +115,11 @@ const generateHTML = function (employeeCards) {
 
     <body>
       <header>
-        <div class="title p-4 mb-2 bg-danger text-white text-center font-weight-bolder">Team Members</div>
+        <div class="title p-4 bg-danger text-white text-center font-weight-bolder">Team Members</div>
       </header>
 
       <main>
-        <div class="row justify-content-center flex-wrap-wrap">
+        <div class="cards row justify-content-center flex-wrap-wrap">
           ${employeeCards}
         </div>
       </main>
