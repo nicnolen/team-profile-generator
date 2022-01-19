@@ -7,8 +7,29 @@
 }
 
 /* Colors */
+:root {
+  --text-card-header: #ffffff;
+  --bg-card-header: #00b3ff;
+}
+
+/* SITE TITLE */
+/* Style the site title */
+.title {
+  font-size: 10vh;
+}
 
 /* CARD HEADER */
+/* Style the card header */
+.card-heading {
+  background-color: var(--bg-card-header);
+  color: var(--text-card-header);
+}
+/* Style the icon */
+.material-icons,
+.role {
+  vertical-align: middle;
+}
+
 /* Style the role title */
 .role {
   display: inline-block;

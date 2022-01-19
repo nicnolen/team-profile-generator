@@ -37,18 +37,19 @@ const generateCards = team => {
 // Generate Manager card
 const generateManager = function (manager) {
   return `
-    <div class="card">
-      <div class="card-header">
-        <h3>${manager.name}</h3>
-        <i class="material-icons">local_cafe</i><h4 class="role">Manager</h4>
-      </div>
+    <div class="col-3 m-3">
+      <div class="card h-100">
+        <div class="card-heading card-header">
+          <h3>${manager.name}</h3>
+          <i class="material-icons">local_cafe</i><h4 class="role">Manager</h4>
+        </div>
 
-      <div class="card-body">
-        <p class="id">ID: ${manager.id}</p>
-        <p class="email">Email: <a href="mailto:${manager.email}">${manager.email}</a></p>
-        <p class="officeNumber">Office Number: ${manager.officeNumber}</p>
+        <div class="card-body">
+          <p class="id"><b>ID:</b> ${manager.id}</p>
+          <p class="email"><b>Email:</b> <a href="mailto:${manager.email}">${manager.email}</a></p>
+          <p class="officeNumber"><b>Office Number:</b> ${manager.officeNumber}</p>
+        </div>
       </div>
-
     </div>
     `;
 };
@@ -56,15 +57,17 @@ const generateManager = function (manager) {
 // Generate Engineer card
 const generateEngineer = function (engineer) {
   return `
-    <div class="card">
-      <div class="card-header">
-        <h3>${engineer.name}</h3>
-        <i class="material-icons">engineering</i><h4 class="role">Engineer</h4>
-      </div>
-      <div class="card-body">
-        <p class="id">ID: ${engineer.id}</p>
-        <p class="email">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
-        <p class="github">GitHub Username: <a href="https://github.com/${engineer.github}">${engineer.github}</a></p>
+    <div class="col-3 m-3">
+      <div class="card h-100">
+        <div class="card-heading card-header">
+          <h3>${engineer.name}</h3>
+          <i class="material-icons">engineering</i><h4 class="role">Engineer</h4>
+        </div>
+        <div class="card-body">
+          <p class="id"><b>ID:</b> ${engineer.id}</p>
+          <p class="email"><b>Email:</b> <a href="mailto:${engineer.email}">${engineer.email}</a></p>
+          <p class="github"><b>GitHub:</b> <a href="https://github.com/${engineer.github}">${engineer.github}</a></p>
+        </div>
       </div>
     </div>
     `;
@@ -73,15 +76,17 @@ const generateEngineer = function (engineer) {
 // Generate Intern card
 const generateIntern = function (intern) {
   return `
-    <div class="card">
-      <div class="card-header">
-        <h3>${intern.name}</h3>
-        <i class="material-icons">school</i><h4 class="role">Intern</h4>
-      </div>
-      <div class="card-body">
-        <p class="id">ID: ${intern.id}</p>
-        <p class="email">Email: <a href="mailto:${intern.email}">${intern.email}</a></p>
-        <p class="school">School: ${intern.school}</p>
+    <div class="col-3 m-3">
+      <div class="card h-100">
+        <div class="card-heading card-header">
+          <h3>${intern.name}</h3>
+          <i class="material-icons">school</i><h4 class="role">Intern</h4>
+        </div>
+        <div class="card-body">
+          <p class="id"><b>ID:</b> ${intern.id}</p>
+          <p class="email"><b>Email:</b> <a href="mailto:${intern.email}">${intern.email}</a></p>
+          <p class="school"><b>School:</b> ${intern.school}</p>
+        </div>
       </div>
     </div>
     `;
@@ -101,9 +106,14 @@ const generateHTML = function (employeeCards) {
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
+
     <body>
+      <header>
+        <div class="title p-4 mb-2 bg-danger text-white text-center font-weight-bolder">Team Members</div>
+      </header>
+
       <main>
-        <div>
+        <div class="row justify-content-center flex-wrap-wrap">
           ${employeeCards}
         </div>
       </main>
