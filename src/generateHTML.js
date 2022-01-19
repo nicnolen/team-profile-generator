@@ -36,14 +36,34 @@ const generateCards = team => {
 // Generate Manager card
 const generateManager = function (manager) {
   return `
-    <h3>${manager.name}</h3>
+    <div class="card">
+      <div class="card-header">
+        <h3>${manager.name}</h3>
+        <h4>Manager</h4>
+      </div>
+
+      <div class="card-body">
+        <p class="id">ID: ${manager.id}</p>
+        <p class="email">Email: <a href="mailto:${manager.email}">${manager.email}</a></p>
+        <p class="officeNumber">Office Number: ${manager.officeNumber}</p>
+      </div>
+
+    </div>
     `;
 };
 
 // Generate Engineer card
 const generateEngineer = function (engineer) {
   return `
-    <h3>${engineer.name}</h3>
+    <div class="card">
+      <div class="card-header">
+        <h3>${engineer.name}</h3>
+        <h4>Engineer</h4>
+      </div>
+      <div class="card-body">
+      <p class="id">ID: ${engineer.id}</p>
+      <p class="email">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
+      <p class="github">GitHub Username: <a href="https://github.com/${engineer.github}">${engineer.github}</a></p>
     `;
 };
 
@@ -63,7 +83,6 @@ const generateHTML = function (employeeCards) {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Team Profile</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
         <link href="https://fonts.googleapis.com/css?family=Public+Sans:300i,300,500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
