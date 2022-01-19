@@ -40,7 +40,7 @@ const generateManager = function (manager) {
     <div class="card">
       <div class="card-header">
         <h3>${manager.name}</h3>
-        <i class="material-icons">local_cafe</i><h4>Manager</h4>
+        <i class="material-icons">local_cafe</i><h4 class="role">Manager</h4>
       </div>
 
       <div class="card-body">
@@ -59,7 +59,7 @@ const generateEngineer = function (engineer) {
     <div class="card">
       <div class="card-header">
         <h3>${engineer.name}</h3>
-        <i class="material-icons">engineering</i><h4>Engineer</h4>
+        <i class="material-icons">engineering</i><h4 class="role">Engineer</h4>
       </div>
       <div class="card-body">
         <p class="id">ID: ${engineer.id}</p>
@@ -76,7 +76,7 @@ const generateIntern = function (intern) {
     <div class="card">
       <div class="card-header">
         <h3>${intern.name}</h3>
-        <i class="material-icons">school</i><h4>Intern</h4>
+        <i class="material-icons">school</i><h4 class="role">Intern</h4>
       </div>
       <div class="card-body">
         <p class="id">ID: ${intern.id}</p>

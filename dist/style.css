@@ -1,0 +1,15 @@
+/* GENERAL STYLES */
+/* Margin and padding spacing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Colors */
+
+/* CARD HEADER */
+/* Style the role title */
+.role {
+  display: inline-block;
+}
