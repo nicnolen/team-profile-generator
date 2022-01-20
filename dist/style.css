@@ -12,6 +12,16 @@
   --bg-card-header: #00b3ff;
 }
 
+/* Style the body */
+html,
+body {
+  background-image: url('https://wallpaperaccess.com/full/499246.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  overflow-x: hidden;
+}
+
 /* SITE TITLE */
 /* Style the site title */
 .title {
@@ -36,10 +46,4 @@
 /* Style the role title */
 .role {
   display: inline-block;
-}
-
-/* CARD BODY */
-/* Set a background image for the body */
-.background {
-  background-image: url('https://wallpaperaccess.com/full/499246.jpg');
 }
