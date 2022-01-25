@@ -1,6 +1,3 @@
-// Import dependencies
-const express = require('express');
-
 // Import the page-template.js
 const generateCards = require('./src/generateHTML');
 
@@ -14,11 +11,6 @@ const fs = require('fs');
 
 // Import Inquirer (npm package)
 const inquirer = require('inquirer');
-
-// Set PORT. NOTE: Herokus apps are served using port 80. When Heroku runs the app, it sets the environment variable `process.env.PORT`
-const PORT = process.env.PORT || 3001;
-// Initialize the app by running the express() function
-const app = express();
 
 // Empty array to store added team members
 var teamMembersArr = [];
@@ -244,8 +236,3 @@ addManager()
   .catch(err => {
     console.log(err);
   });
-
-// Make the server listen
-app.listen(PORT, () => {
-  console.log(`API server is now on port ${PORT}!`);
-});

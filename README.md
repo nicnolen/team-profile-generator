@@ -81,7 +81,7 @@ Click on the link for more information: [MIT License Information](https://openso
 
 ## Tests
 
-If you would like see how the current tests work, type `npm test` in the command line. After running the `npmm test` command, you should see a bunch of passing tests in the command line as shown below.
+If you would like see how the current tests work, type `npm test` in the command line. After running the `npm test` command, you should see a bunch of passing tests in the command line as shown below.
 
 ![success-tests](https://user-images.githubusercontent.com/88728912/150388463-6936d7df-a706-45de-bd5f-efc938e457a5.png)
 
