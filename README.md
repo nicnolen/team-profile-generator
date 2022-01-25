@@ -72,7 +72,7 @@ When you first clone the code and open the index.js file, you should see the sam
 
 ### Visual Walkthrough
 
-For a visual walkthrough about how to create the team profile, click on the link: https://watch.screencastify.com/v/zBgsbqohV1ARdosxPiM9
+For a visual walkthrough about how to create the team profile, click on the link: https://watch.screencastify.com/v/b3qf8xvID1U0s7ONL8SJ
 
 ## License
 
