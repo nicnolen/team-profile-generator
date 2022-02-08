@@ -5,16 +5,24 @@
 ## Table of Contents
 
 - [Description](#description)
+- [Built With](#built-with)
 - [Installation Instructions](#installation-instructions)
 - [Usage Instructions](#usage-instructions)
 - [License Section](#license)
-
 - [Testing](#testing)
 - [Contact Me](#contact-me)
 
 ## Description
 
 An application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person.
+
+## Built With
+- HTML
+- CSS
+- JavaScript
+- Node.js
+- Jest
+- Inquirer
 
 ## Installation Instructions
 
