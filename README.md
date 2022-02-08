@@ -9,7 +9,7 @@
 - [Installation Instructions](#installation-instructions)
 - [Usage Instructions](#usage-instructions)
 - [License Section](#license)
-- [Testing](#testing)
+- [Tests](#tests)
 - [Contact Me](#contact-me)
 
 ## Description
